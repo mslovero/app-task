@@ -98,7 +98,15 @@ export default function InputTask({ todos, setTodos }) {
             <RenderEmoji emoji="🎁" />
             <RenderEmoji emoji="🛒" />
             <RenderEmoji emoji="🎉" />
-            <RenderEmoji emoji="🏃🏻‍♂️" />
+            <RenderEmoji emoji="  " />
+            <RenderEmoji emoji="🧹" />
+            <RenderEmoji emoji="🛏️" />
+            <RenderEmoji emoji="💻" />
+            <RenderEmoji emoji="📖" />
+
+
+
+
           </Animated.View>
         )}
         <View style={styles.inputContainer}>

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { Text, TouchableOpacity, View, StyleSheet, Pressable } from 'react-native'
+import { Text, TouchableOpacity, View, StyleSheet, Pressable, Alert } from 'react-native'
 import { Feather } from "@expo/vector-icons";
 import { BottomSheetModal } from "@gorhom/bottom-sheet";
 import SharedTodoModalContent from './SharedTodoModalContent';
@@ -19,6 +19,13 @@ function CheckMarck({id, completada, toggleTodo}) {
         const data = await response.json();
         console.log('desde data===>', data);
         toggleTodo(id);
+        if (!completada) {
+          Alert.alert(
+              '¡Congratulation!',
+              'You have completed the task.',
+              [{ text: 'OK', onPress: () => console.log('OK Pressed') }]
+          );
+      }
       }
     return (
         <Pressable

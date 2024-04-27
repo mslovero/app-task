@@ -45,7 +45,7 @@ export default function App() {
         renderItem={({ item }) =>
         //  <Text>{item.titulo}</Text>}
         <Task {...item} toggleTodo={toggleTodo} clearTodo={clearTodo}/>}
-         ListHeaderComponent={() => <Text style={styles.title}>Hoy</Text>}
+         ListHeaderComponent={() => <Text style={styles.title}>Today</Text>}
          contentContainerStyle={styles.contentContainerStyle}
           />
          <InputTask todos={todos} setTodos={setTodos} />

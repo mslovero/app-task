@@ -30,8 +30,8 @@ export default function SharedTodoModalContent({
 //modal de particintestulo
   return (
     <View style={styles.contentContainer}>
-      <Text style={[styles.title, { marginBottom: 20 }]}>Shared Tasks</Text>
-      <Text style={[styles.title, { marginBottom: 20 }]}>"{titulo}"</Text>
+      <Text style={[styles.title, { marginBottom: 15 }]}>Shared Tasks</Text>
+      <Text style={[styles.title, { marginBottom: 15 }]}>"{titulo}"</Text>
       <Text style={[styles.title]}>Status</Text>
       <View
         style={[
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   contentContainer: {
     flex: 1,
     alignItems: "center",
-    paddingHorizontal: 15,
+    paddingHorizontal: 10,
   },
   title: {
     fontWeight: "900",
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   participant: {
     backgroundColor: "#8b5cf6",
     padding: 5,
-    paddingHorizontal: 10,
+    paddingHorizontal: 5,
     margin: 5,
     borderRadius: 20,
     fontWeight: "900",
